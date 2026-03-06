@@ -1,0 +1,11 @@
+# run results (may contain real invoice data)
+output/*
+!output/.gitkeep
+
+# local secrets
+.env
+*.local.json
+
+node_modules/
+.DS_Store
+Thumbs.db

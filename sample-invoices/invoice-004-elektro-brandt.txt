@@ -1,0 +1,23 @@
+ELEKTRO BRANDT GmbH & Co. KG
+Meisterbetrieb · Gewerbepark Süd 22 · 79111 Freiburg
+info@elektro-brandt.example · USt-IdNr. DE000000044
+
+Rechnungsempfänger:
+Musterfirma Technik GmbH, Musterstraße 1, 79100 Freiburg im Breisgau
+
+RECHNUNG EB-26-0231
+Datum: 19.02.2026
+Auftrag: Erweiterung Stromversorgung Labor 2 (Ihr Zeichen: BANF-7781)
+
+Leistung / Material                              Menge     Preis      Betrag
+Arbeitszeit Elektromeister                      12 Std.   68,00 €    816,00 €
+Kabelkanal 60x40 mm, weiß                       40 m       3,85 €    154,00 €
+Schuko-Steckdose AP, IP44                       24 St.     7,90 €    189,60 €
+Leitungsschutzschalter B16                       6 St.    14,40 €     86,40 €
+Anfahrtspauschale                                2 x      35,00 €     70,00 €
+
+Zwischensumme netto                                                1.316,00 €
+Umsatzsteuer 19 %                                                    250,04 €
+Endbetrag                                                          1.656,04 €
+
+Zahlungsziel: 30 Tage netto. Bei Zahlung innerhalb 10 Tagen 2 % Skonto.

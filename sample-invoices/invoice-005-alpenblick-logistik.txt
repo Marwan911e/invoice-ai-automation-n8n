@@ -1,0 +1,24 @@
+                    ALPENBLICK LOGISTIK GmbH
+          Industriestraße 40 | 1230 Wien | Österreich
+   UID: ATU00000055 | FN 000000a | office@alpenblick-log.example
+------------------------------------------------------------------
+Musterfirma Technik GmbH
+Musterstraße 1, 79100 Freiburg im Breisgau, DEUTSCHLAND
+UID Empfänger: DE000000066
+
+RECHNUNG  Nr. AL/2026/0412          Wien, am 03. März 2026
+Ihre Bestellung vom 24.02.2026 – Sendung SND-55102
+
+  Palettentransport Wien -> Freiburg
+     3 Europaletten à EUR 145,00 ............. EUR   435,00
+  Treibstoff-/Mautzuschlag 8 % ............... EUR    34,80
+  Avisierung / Zeitfenster-Zustellung ........ EUR    15,00
+                                               -------------
+  Summe netto ................................ EUR   484,80
+  USt 0 % .................................... EUR     0,00
+  RECHNUNGSBETRAG ............................ EUR   484,80
+
+  Steuerschuldnerschaft des Leistungsempfängers (Reverse Charge),
+  Art. 196 MwStSystRL. Innergemeinschaftliche Dienstleistung.
+
+Bankverbindung: AT00 0000 0000 0000 0000

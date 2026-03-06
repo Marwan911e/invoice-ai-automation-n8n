@@ -1,0 +1,27 @@
+CLOUDHAFEN HOSTING UG (haftungsbeschränkt)
+Speicherstadt 7, 28195 Bremen, Germany
+VAT ID: DE000000022 | billing@cloudhafen.example
+
+BILL TO
+Musterfirma Technik GmbH
+Musterstraße 1
+79100 Freiburg im Breisgau
+Germany
+
+INVOICE  #CH-2602-0153
+Issue date:   February 28, 2026
+Period:       Feb 1 - Feb 28, 2026
+Due date:     March 14, 2026
+
+Description                                   Qty      Unit price     Amount
+--------------------------------------------------------------------------
+Managed VPS "M" (4 vCPU / 8 GB RAM)           1           49.00        49.00
+Additional backup storage, 200 GB             1           12.00        12.00
+Wildcard SSL certificate (1/12 of annual)     1            8.25         8.25
+Support, billed per 30 min                    1.5 h       85.00       127.50
+--------------------------------------------------------------------------
+Subtotal (net)                                                  EUR  196.75
+VAT 19%                                                         EUR   37.38
+TOTAL DUE                                                       EUR  234.13
+
+Payment by SEPA direct debit (mandate MND-00000). No action required.

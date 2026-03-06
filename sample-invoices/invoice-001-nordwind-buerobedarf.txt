@@ -1,0 +1,32 @@
+Nordwind Bürobedarf GmbH
+Hafenweg 12 · 20457 Hamburg
+Tel. 040 000000-0 · rechnung@nordwind-buero.example
+USt-IdNr.: DE000000011
+
+An:
+Musterfirma Technik GmbH
+Einkauf / Kreditoren
+Musterstraße 1
+79100 Freiburg im Breisgau
+
+RECHNUNG
+
+Rechnungsnummer:   RE-2026-00418
+Rechnungsdatum:    04.02.2026
+Kundennummer:      K-10233
+Lieferdatum:       02.02.2026
+
+Pos  Menge  Artikel                              Einzelpreis     Gesamt
+1    10     Kopierpapier A4, 80 g, 500 Blatt          4,90 €     49,00 €
+2     4     Toner XL schwarz (kompatibel)            62,50 €    250,00 €
+3     2     Bürostuhl "Ergo 2", Netzrücken          189,00 €    378,00 €
+4     1     Versandkostenpauschale                    6,90 €      6,90 €
+
+                                       Nettobetrag:          683,90 €
+                                       zzgl. 19 % USt.:      129,94 €
+                                       -------------------------------
+                                       Rechnungsbetrag:      813,84 €
+
+Zahlbar innerhalb von 14 Tagen ohne Abzug.
+IBAN: DE00 0000 0000 0000 0000 00 · BIC: XXXXDEXXXXX
+Bitte geben Sie bei Zahlung die Rechnungsnummer an.

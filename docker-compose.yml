@@ -1,0 +1,20 @@
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    ports:
+      - "5678:5678"
+    environment:
+      - GENERIC_TIMEZONE=Europe/Berlin
+      - TZ=Europe/Berlin
+      # The Read/Write Files node may only touch this folder
+      - N8N_RESTRICT_FILE_ACCESS_TO=/files
+      - N8N_DIAGNOSTICS_ENABLED=false
+    volumes:
+      - n8n_data:/home/node/.n8n
+      # Drop invoices here (the samples are mounted as the inbox for the demo)
+      - ./sample-invoices:/files/inbox:ro
+      # Results: invoices-ok-*.csv and needs-review-*.csv
+      - ./output:/files/output
+
+volumes:
+  n8n_data:

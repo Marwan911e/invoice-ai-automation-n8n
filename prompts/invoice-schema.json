@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "supplier_name",
+    "supplier_vat_id",
+    "invoice_number",
+    "invoice_date",
+    "currency",
+    "net_amount",
+    "vat_rate",
+    "vat_amount",
+    "total_amount",
+    "confidence",
+    "notes"
+  ],
+  "properties": {
+    "supplier_name": { "type": ["string", "null"], "description": "Legal name of the company that issued the invoice" },
+    "supplier_vat_id": { "type": ["string", "null"], "description": "Supplier VAT ID (USt-IdNr. / UID), without spaces" },
+    "invoice_number": { "type": ["string", "null"], "description": "Invoice number exactly as printed" },
+    "invoice_date": { "type": ["string", "null"], "description": "Invoice date as YYYY-MM-DD" },
+    "currency": { "type": ["string", "null"], "description": "ISO 4217 currency code" },
+    "net_amount": { "type": ["number", "null"], "description": "Total net amount before VAT" },
+    "vat_rate": { "type": ["number", "null"], "description": "VAT rate in percent, e.g. 19" },
+    "vat_amount": { "type": ["number", "null"], "description": "VAT amount" },
+    "total_amount": { "type": ["number", "null"], "description": "Gross total as printed on the invoice" },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+    "notes": { "type": "string", "description": "Anything unusual, or empty string" }
+  }
+}

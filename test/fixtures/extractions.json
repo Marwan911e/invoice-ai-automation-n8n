@@ -1,0 +1,68 @@
+{
+  "_comment": "What a correct extraction of each sample invoice looks like (the JSON the model is asked to return). Used by the tests and by scripts/make-example-output.js.",
+  "invoice-001-nordwind-buerobedarf.txt": {
+    "supplier_name": "Nordwind Bürobedarf GmbH",
+    "supplier_vat_id": "DE000000011",
+    "invoice_number": "RE-2026-00418",
+    "invoice_date": "2026-02-04",
+    "currency": "EUR",
+    "net_amount": 683.9,
+    "vat_rate": 19,
+    "vat_amount": 129.94,
+    "total_amount": 813.84,
+    "confidence": "high",
+    "notes": ""
+  },
+  "invoice-002-cloudhafen-hosting.txt": {
+    "supplier_name": "Cloudhafen Hosting UG (haftungsbeschränkt)",
+    "supplier_vat_id": "DE000000022",
+    "invoice_number": "CH-2602-0153",
+    "invoice_date": "2026-02-28",
+    "currency": "EUR",
+    "net_amount": 196.75,
+    "vat_rate": 19,
+    "vat_amount": 37.38,
+    "total_amount": 234.13,
+    "confidence": "high",
+    "notes": "Paid by SEPA direct debit."
+  },
+  "invoice-003-gruenwerk-catering.txt": {
+    "supplier_name": "Grünwerk Catering e.K.",
+    "supplier_vat_id": "DE000000033",
+    "invoice_number": "2026-0087",
+    "invoice_date": "2026-02-12",
+    "currency": "EUR",
+    "net_amount": 494.5,
+    "vat_rate": 7,
+    "vat_amount": 34.62,
+    "total_amount": 529.12,
+    "confidence": "high",
+    "notes": "Reduced VAT rate for food delivery."
+  },
+  "invoice-004-elektro-brandt.txt": {
+    "supplier_name": "Elektro Brandt GmbH & Co. KG",
+    "supplier_vat_id": "DE000000044",
+    "invoice_number": "EB-26-0231",
+    "invoice_date": "2026-02-19",
+    "currency": "EUR",
+    "net_amount": 1316.0,
+    "vat_rate": 19,
+    "vat_amount": 250.04,
+    "total_amount": 1656.04,
+    "confidence": "medium",
+    "notes": "Printed total 1656.04 does not equal net 1316.00 + VAT 250.04 = 1566.04."
+  },
+  "invoice-005-alpenblick-logistik.txt": {
+    "supplier_name": "Alpenblick Logistik GmbH",
+    "supplier_vat_id": "ATU00000055",
+    "invoice_number": "AL/2026/0412",
+    "invoice_date": "2026-03-03",
+    "currency": "EUR",
+    "net_amount": 484.8,
+    "vat_rate": 0,
+    "vat_amount": 0,
+    "total_amount": 484.8,
+    "confidence": "high",
+    "notes": "Reverse charge, intra-EU service."
+  }
+}

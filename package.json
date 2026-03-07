@@ -4,6 +4,7 @@
   "private": true,
   "description": "n8n workflow that turns invoices into validated structured data with Claude",
   "scripts": {
+    "build": "node scripts/build-workflow.js",
     "test": "node --test test/validate.test.js"
   },
   "engines": {

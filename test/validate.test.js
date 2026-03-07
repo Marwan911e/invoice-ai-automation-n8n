@@ -25,6 +25,11 @@ test('invoice 004 (wrong total) goes to review', () => {
   assert.match(result.summary, /REVIEW/);
 });
 
+test('rounding differences up to 2 cents are accepted', () => {
+  const result = validateInvoice({ ...good, total_amount: 813.85 }, { today: TODAY });
+  assert.equal(result.status, 'ok');
+});
+
 test('missing required fields are reported', () => {
   const result = validateInvoice({ ...good, invoice_number: null, supplier_name: '' }, { today: TODAY });
   assert.equal(result.status, 'needs_review');

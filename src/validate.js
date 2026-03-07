@@ -9,7 +9,7 @@
  * Code node sandbox.
  */
 
-const TOLERANCE = 0.01;
+const TOLERANCE = 0.02; // allow 2 cents of rounding difference
 
 const REQUIRED_FIELDS = [
   'supplier_name',

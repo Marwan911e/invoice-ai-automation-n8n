@@ -21,6 +21,8 @@ const REQUIRED_FIELDS = [
   'total_amount',
 ];
 
+const KNOWN_VAT_RATES = [0, 5, 7, 10, 13, 16, 19, 20, 21, 22, 25];
+
 function round2(n) {
   return Math.round(n * 100) / 100;
 }
@@ -92,6 +94,25 @@ function validateInvoice(data, opts) {
         `total ${formatAmount(total)} does not equal net ${formatAmount(net)} + VAT ${formatAmount(vat)} = ${formatAmount(expected)}`
       );
     }
+  }
+
+  // 4. VAT rate consistent with the amounts
+  if (typeof data.vat_rate === 'number' && typeof net === 'number' && typeof vat === 'number') {
+    if (!KNOWN_VAT_RATES.includes(data.vat_rate)) {
+      reasons.push(`unusual VAT rate ${data.vat_rate}%`);
+    }
+    const expectedVat = round2((net * data.vat_rate) / 100);
+    // VAT is often rounded per line item, so allow a little more slack here
+    if (Math.abs(expectedVat - vat) > Math.max(TOLERANCE, net * 0.0005)) {
+      reasons.push(
+        `VAT ${formatAmount(vat)} does not match ${data.vat_rate}% of net ${formatAmount(net)} (= ${formatAmount(expectedVat)})`
+      );
+    }
+  }
+
+  // 5. The model's own doubt counts too
+  if (data.confidence === 'low') {
+    reasons.push('model reported low confidence' + (data.notes ? `: ${data.notes}` : ''));
   }
 
   const status = reasons.length === 0 ? 'ok' : 'needs_review';

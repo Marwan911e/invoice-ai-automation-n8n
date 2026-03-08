@@ -152,6 +152,22 @@ const nodes = [
   },
   {
     parameters: {
+      httpMethod: 'POST',
+      path: 'invoice',
+      responseMode: 'onReceived',
+      options: {},
+    },
+    id: id(),
+    name: 'Invoice by webhook / e-mail',
+    type: 'n8n-nodes-base.webhook',
+    typeVersion: 2,
+    position: [0, 600],
+    webhookId: '6f1d2c3b-9a8e-4d7c-b6a5-f4e3d2c1b0a9',
+    notes:
+      'POST {"fileName": "...", "text": "..."}. Connect an e-mail parser or forwarding rule (Gmail, Outlook, Mailgun inbound) here.',
+  },
+  {
+    parameters: {
       fileSelector: `${INBOX}/*.{txt,pdf}`,
       options: {},
     },
@@ -363,6 +379,7 @@ const connections = {
   'Extract PDF text': { main: [[link('PDF to text')]] },
   'PDF to text': { main: [[link('Prepare Claude request')]] },
   'TXT to text': { main: [[link('Prepare Claude request')]] },
+  'Invoice by webhook / e-mail': { main: [[link('Prepare Claude request')]] },
   'Prepare Claude request': { main: [[link('Claude: extract fields')]] },
   'Claude: extract fields': { main: [[link('Validate extraction')]] },
   'Validate extraction': { main: [[link('Valid?')]] },

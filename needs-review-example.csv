@@ -1,0 +1,2 @@
+file_name,supplier_name,supplier_vat_id,invoice_number,invoice_date,currency,net_amount,vat_rate,vat_amount,total_amount,confidence,status,review_reasons,summary,processed_at
+invoice-004-elektro-brandt.txt,Elektro Brandt GmbH & Co. KG,DE000000044,EB-26-0231,2026-02-19,EUR,1316,19,250.04,1656.04,medium,needs_review,total 1656.04 does not equal net 1316.00 + VAT 250.04 = 1566.04,EB-26-0231 | Elektro Brandt GmbH & Co. KG | 2026-02-19 | 1656.04 EUR (net 1316.00 + VAT 250.04) | REVIEW: total 1656.04 does not equal net 1316.00 + VAT 250.04 = 1566.04,2026-03-08T15:42:10.000Z

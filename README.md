@@ -139,6 +139,14 @@ npm test        # validation rules (Node 18+, no dependencies)
 npm run build   # regenerate workflow.json
 ```
 
+## Limits
+
+- **The model can be wrong.** It can misread a number, mix up supplier and recipient, or pick the wrong date. The schema only guarantees the *shape* of the answer, not that it's correct. That is why the rule-based validation exists, and why anything that doesn't pass every check goes to a human instead of being "auto-fixed".
+- **The checks catch inconsistency, not every error.** If the model misreads the total *and* the net in a way that still adds up, the invoice passes. For real use you would add checks against master data: known supplier VAT IDs, purchase-order numbers, duplicate invoice numbers, and a periodic manual sample of the "ok" rows.
+- **Invoices with several VAT rates** (e.g. 7 % food + 19 % drinks) are reduced to one rate and need review. A line-item schema would fix this.
+- **Scanned PDFs** need OCR first. The workflow flags them instead of guessing.
+- **Confidentiality.** Invoices contain personal and business data (names, addresses, bank details). Running the workflow sends the invoice text to the Anthropic API. Before using real invoices, check this against your data-protection rules (GDPR, a data processing agreement, data retention settings), or point the HTTP node at a model hosted in your own infrastructure. The sample invoices here are fictitious, and `output/` is git-ignored so real results are never committed.
+
 ## License
 
 MIT
